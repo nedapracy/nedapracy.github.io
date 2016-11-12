@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Катя Курьян">
+	<meta name="description" content="Данный сайт являеться частью учебной программы ММФ. Узнать больше о факультете можно здесь: mmf.bsu.by/ru">		
+	<meta name="keywords" content="праздники минск, выставки в минске, афиша мероприятий">
+	<title>Афиша новостей</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="up"><a href=""><img alt="На вверх" src="img/up.png" /></a></div>
+<header>
+	<div id="info"><p>"Если человек не умеет хорошо отдыхать, он вряд ли сможет хорошо работать." Связаться со мной, можно по телефону: +375 29 123-45-67</p></div>
+	<div class="wrap">
+		<div id="logo" style="text-align: center;">
+			<a href=""><img id="#top" alt="На главную" src="img/logo.png" /></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="m" title="">Афиша новостей</a></li>
+				<li><a href="#" accesskey="2" title="">Главное событие</a></li>
+				<li><a href="#" accesskey="3" target="_blank" title="">О проекте</a></li>
+				<li><a href="#" accesskey="4" hreflang="ru" title="">Контакты</a></li>
+				<li><a href="/list.pdf" accesskey="5" title="" download>Скачать расписание</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+</header>
+<div class="wrap content">
+	<div class="column">
+		<article id="news">
+			<h1 style="color: #d3382c;">Австралиец: «Минску очень нужны деревья»</h1>
+			<hr>
+			<img alt="Зелёный Минск" src="http://citydog.by/content/_posts/442X361/582198d2be1fe.jpg" / style="float: left; margin-right: 7px;">
+			<p>Зеленый портал пообщался с австралийским экологом, ботаником и пермакультурным дизайнером Дэвидом Брауном. Он участвовал в картировании деревьев в Минске и пришел к выводу, что нашему городу они нужны, как никакому другому.</p>
+			<br>
+			<p>У себя на родине, в Австралии, Дэвид Браун занимается экологическими проектами, читает лекции, посещает экспериментальные территории – от дач до лесов. А экологическое образование получил в Университете Тасмании. В Беларуси он бывал не раз.</p>
+			<br>
+			<p>«Одна из улиц, которая больше всего нуждается в деревьях, – проспект Независимости. Вернувшись через год в Беларусь, я заметил, что деревьев там стало меньше, и это грустно. Не знаю другого города, который нуждался бы в деревьях так же сильно. А ведь я бывал в Канаде, США, России, Западной Европе, Великобритании, на Гавайях, в Новой Зеландии и Австралии», – рассказывает эколог.</p>
+			<br>
+			<p>Причем, по словам Дэвида, в Минске картирование совсем не учло то, в каких условиях живут деревья: достаточно ли подпитываются, получают ли необходимое количество влаги и т. д.</p>
+		</article>
+	</div>
+	<aside>
+		<ul>
+			<li class="block" onclick="show_content()"><span>Австралиец: «Минску очень нужны деревья»</span><img alt="Зелёный Минск" src="http://citydog.by/content/_posts/442X361/582198d2be1fe.jpg" /></li>
+			<li class="block"><span>Как прошёл Halloween</span><img alt="Fym Halloween" src="img/3.jpg" /></li>
+			<li class="block"><img alt="Японская осень в Беларуси" src="http://citydog.by/content/_afisha/334X334/57f7699e35030.jpg" /></li>
+			<li class="block"><img alt="Белорусские недели" src="img/6.jpg" /></li>
+		</ul>
+	</aside>
+	<footer><hr>Copyright © 2016</footer>
+</div>
+<script>
+	show_content(){
+		document.getElementById("news").innerHTML='<object type="text/html" data="article1.html" ></object>';
+	}
+	$('.block').click(function(){
+			$(".block").removeClass("active");
+			$(this).addClass("active");
+		});
+</script>
+</body>
+</html>
