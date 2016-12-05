@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Контакты</title>
+	<!--<base href="https://nedapracy.github.io/">-->
 	<meta name="author" content="Екатерина Курьян">
 	<meta name="description" content="Данный сайт являеться частью учебной программы ММФ. Узнать больше о факультете можно здесь: mmf.bsu.by/ru">		
 	<meta name="keywords" content="праздники минск, выставки в минске, афиша мероприятий">
@@ -13,11 +14,16 @@
 <div id="up"><a href=""><img alt="На вверх" src="img/up.png" /></a></div>
 <div class="wrapper">
 	<header>
+		<div id="contact-wrapper">
+			<span>+375 29 123-45-67</span>
+			<a href="mailto:nedapracy@gmail.com?subject=Вопрос по сайту&body=Здравсвуй, у меня возник вопрос&cc=test1@gmail.com&bcc=test2@gmail.com&title=Вопрос по сайту">nedapracy@gmail.com</a>
+		</div>
 		<div id="menu-wrapper">                   
 		<nav>
+			<a href="index.html" accesskey="1" ><img id="logo" src="img/logoNew.png"></a>
 			<a href="index.html" accesskey="1" >Афиша новостей</a>
 			<a href="#" target="_blank" accesskey="2">Главное событие</a>
-			<a href="#" accesskey="3">О проекте</a>
+			<a href="about.html" accesskey="3">О проекте</a>
 			<a href="contact.html" accesskey="4">Контакты</a>
 			<a href="/list.pdf" hreflang="ru" accesskey="d" download>Скачать расписание</a>
 		</nav>
@@ -33,17 +39,17 @@
 	<div class="middle">
 		<div class="container">
 			<article class="content">
-				<form action="" method="POST">
-					<p>Тема сообщения:</p>
-					<input type="radio" name="answer" value="a1" style="margin: 2px 20px 0;">Вопрос
+				<form id="callback" action="" method="POST">
+					<p style="margin: 2px 20px 10px;">Тема сообщения:</p>
+					<input type="radio" name="answer" value="a1" style="margin: 2px 20px 0;" checked>Вопрос
 					<input type="radio" name="answer" value="a2" style="margin: 2px 20px 0;">Жалоба
 					<input type="radio" name="answer" value="a3" style="margin: 2px 20px 0;">Партнёрство
-					<br/><input type="text" name="login" style="width:400px; margin: 10px 20px 0;" value="Имя">
-					<br/><input type="text" name="login" style="width:400px; margin: 10px 20px 0;" value="Почта">
-					<br/><input type="text" name="login" style="width:400px; margin: 10px 20px 0;" value="Телефон">
-					<br/><input type="text" name="login" style="width:400px; margin: 10px 20px 0;" value="Тема сообщения">
-					<br/><input style="width:400px; height:150px; margin: 20px 20px 0;" type="textarea" name="osebe" value="">
-					<br/><input type="submit" value="OK" style="margin: 20px; padding: 5px 20px;">
+					<br/><input type="text" name="login" style="width:400px; margin: 10px 20px 0;" placeholder="Имя">
+					<br/><input type="email" name="email" style="width:400px; margin: 10px 20px 0;" placeholder="Почта">
+					<br/><input type="tel" name="phone" style="width:400px; margin: 10px 20px 0;" placeholder="Телефон">
+					<br/><input type="text" name="subject" style="width:400px; margin: 10px 20px 0;" placeholder="Тема">
+					<br/><input type="textarea" name="osebe" style="width:400px; height:150px; margin: 10px 20px 0;">
+					<br/><input type="submit" value="Отправить" style="margin: 20px; padding: 5px 20px;">
 				</form>
 			</article><!-- .content -->
 		</div><!-- .container-->
@@ -51,7 +57,7 @@
 			<strong>Контактные данные</strong>
 			<p style="margin-top: 20px;">+375 29 123-45-67</p>
 			<p>+375 29 123-45-67</p>
-			<a href="mailto:nedapracy@gmail.com?subject=Вопрос по сайту&body=Здравсвуй, у меня возник вопрос&cc=test1@gmail.com&bcc=test2@gmail.com&title=Вопрос по сайту">email: nedapracy@gmail.com</a>
+			<a href="mailto:nedapracy@gmail.com?subject=Вопрос по сайту&body=Здравсвуй, у меня возник вопрос&cc=test1@gmail.com&bcc=test2@gmail.com&title=Вопрос по сайту">nedapracy@gmail.com</a>
 		</aside><!-- .right-sidebar -->
 	</div><!-- .middle-->
 	<div class="bottom">

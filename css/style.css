@@ -47,7 +47,7 @@ body {
 header {
 	background-size: cover;
     background-position-y: -300px;
-	height: 300px;
+	height: 350px;
     background-image: url(../img/header.jpg);
 }
 
@@ -91,7 +91,7 @@ nav a:last-of-type:hover{
 .top {
 	width: 950px;
 	padding: 10px;
-    margin: 0 auto;
+    margin: -40px auto 0px;
 	position: relative;
 	background-color: #fff; 
 }
@@ -121,6 +121,34 @@ nav a:last-of-type:hover{
 }
 .middle .content {
 	padding: 0 270px 0 0;
+}
+
+input[placeholder]{ color: #a7a5a5; }
+input::-webkit-input-placeholder{ color: #a7a5a5; } 
+input::-moz-placeholder { color: #a7a5a5; }
+input:-moz-placeholder{ color: #a7a5a5; } 
+input:-ms-input-placeholder { color: #a7a5a5; }  
+
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input::-moz-placeholder              {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-ms-input-placeholder      {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus::-moz-placeholder  {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+#callback input[type="submit"]{
+	background: #f44336;
+	color: #fff;
+	border: 2px solid #f44336;
+} 
+
+#callback input[type="submit"]:hover{
+	background: #dc6c64;
+	color: #fff;
+	border: 2px solid #dc6c64;
+	cursor: pointer;
 }
 
 /* Right Sidebar*/
@@ -157,6 +185,13 @@ nav a:last-of-type:hover{
 .right-sidebar ul li:hover{
 	border-left: 2px solid #f44336;
 }
+
+.right-sidebar a{
+	color: #000;
+	text-decoration: none;
+}
+
+.right-sidebar a:hover{ color: #f44336; }
 
 /* Bottom*/
 .bottom {
