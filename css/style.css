@@ -34,7 +34,7 @@ body {
 #contact-wrapper a:hover{ color: #f44336; }
 
 #menu-wrapper {
-	width: 950px;
+	width: 970px;
 	margin: 0 auto;
 	z-index: 1000;
 	background-color: #FFF;
@@ -87,6 +87,16 @@ nav a:last-of-type:hover{
 	border: 2px solid #dc6c64;
 } 
 
+/* Breadcrumb*/
+.breadcrumb{
+	width: 970px;
+    padding: 10px 0;
+    font-size: 32px;
+    color: #fff;
+    margin: -90px auto 60px;
+    position: relative;
+}
+
 /* Top*/
 .top {
 	width: 950px;
@@ -121,6 +131,13 @@ nav a:last-of-type:hover{
 }
 .middle .content {
 	padding: 0 270px 0 0;
+}
+
+hr{     
+	margin: 15px 0;
+    background: #e2e2e2;
+    height: 1px;
+    border: none;
 }
 
 input[placeholder]{ color: #a7a5a5; }
@@ -215,14 +232,7 @@ footer {
 	width: 950px;
 	padding: 10px;
     margin: 0 auto;
-	height: 50px;
+	height: 30px;
 	background-color: #fff;
 	text-align: center;
-}
-
-hr{     
-	margin: 10px 0;
-    background: #373737;
-    height: 1px;
-    border: none;
 }
