@@ -44,16 +44,108 @@
 	<div class="middle">
 		<div class="container">
 			<article class="content">
+				<table border="" cellspacing="0" cellpadding="1"><tbody>
+					<tr align="Center">
+						<td>Идентификатор</td>
+						<td>Длина (байт)</td>
+						<td>Диапазон значений</td>
+						<td>Операции</td>
+					</tr>
+					<tr align="CENTER"><td colspan="4">
+						<b>Целые типы</b></td>
+					</tr>
+					<tr align="Center">
+						<td><pre>integer</pre></td>
+						<td>2</td>
+						<td>-32768..32767</td>
+						<td>+, -, /, *, Div, Mod,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER"><td><pre>byte</pre></td>
+						<td>1</td>
+						<td>0..255</td>
+						<td>+, -, /, *, Div, Mod,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER"><td><pre>word</pre></td>
+						<td>2</td>
+						<td>0..65535</td>
+						<td>+, -, /, *, Div, Mod,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER"><td><pre>shortint</pre></td>
+						<td>1</td>
+						<td>-128..127</td>
+						<td>+, -, /, *, Div, Mod,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER">
+						<td><pre>longint</pre></td>
+						<td>4</td>
+						<td>-2147483648..2147483647</td>
+						<td>+, -, /, *, Div, Mod,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER">
+						<td colspan="4"><b>Вещественные типы</b></td></tr>
+						<tr align="CENTER"><td><pre>real</pre></td>
+						<td>6</td>
+						<td>2,9x10<sup>-39</sup> - 1,7x10<sup>38</sup></td>
+						<td>+, -, /, *,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER">
+						<td><pre>single</pre></td>
+						<td>4</td>
+						<td>1,5x10<sup>-45</sup> - 3,4x10<sup>38</sup></td>
+						<td>+, -, /, *,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER">
+						<td><pre>double</pre></td>
+						<td>8</td>
+						<td>5x10<sup>-324</sup> - 1,7x10<sup>308</sup></td>
+						<td>+, -, /, *,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td></tr>
+					<tr align="CENTER">
+						<td><pre>extended</pre></td>
+						<td>10</td>
+						<td>3,4x10<sup>-4932</sup> - 1,1x10<sup>4932</sup></td>
+						<td>+, -, /, *,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER">
+						<td colspan="4"><b>Логический тип</b></td>
+					</tr>
+					<tr align="CENTER">
+						<td><pre>boolean</pre></td>
+						<td>1</td>
+						<td>true, false</td>
+						<td>Not, And, Or, Xor,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+					<tr align="CENTER">
+						<td colspan="4"><b>Символьный тип</b></td>
+					</tr>
+					<tr align="CENTER">
+						<td><pre>char</pre></td>
+						<td>1</td>
+						<td>все символы кода ASCII</td>
+						<td>+,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
+					</tr>
+				</tbody></table>
 				<p>Пример программы, выводящей строку «Hello, world!»:</p>
 				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">begin</span> <br>  <span class="pf">writeln</span>(<span class="pp">'Hello, World!'</span>); <span class="pc">{ оператор вывода строки }</span><br><span class="pv">end.</span></pre>
+				<br>
+				<strong>Выведет</strong>
+				<br>
+				<p>Hello, World!</p>
 				<br>
 				<p>В стандартном и расширенном Паскале есть такие <b>простые</b> типы: числа с плавающей запятой (<code>real</code>), целые (<code>integer</code>), символьный (<code>char</code>), логический (<code>boolean</code>) и перечисления (конструктор нового типа, введённый в Pascal).</p>
 				<br>
 				<p>Современные диалекты Pascal, такие, как FPC или Delphi, считают, что <code>integer</code>&nbsp;— это наиболее подходящий для данной машины целый, применяемый, например, для индексов массива, а <code>shortint</code>, <code>longint</code> и другие&nbsp;— целые определённой длины; это удобно при кроссплатформенном программировании. Аналогично и с дробными числами.</p>
 				<p>Целочисленные типы:</p>
 				<br>
-				<p>Вычисление A в степени n:</p>
+				<p>Вычисление а в степени n:</p>
 				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">var</span><br>   n,i: <span class="pt">integer</span>;<br>   a,p: <span class="pt">real</span>;<br><span class="pv">begin</span><br> <span class="pf">write</span>(<span class="pp">'Введите a,n: '</span>);<br>  <span class="pf">readln(a,n);</span><br>  p := 1;<br>  for i := 1 to n do<br>  p := p * a;<br>  <span class="pf">writeln</span>(a,<span class="pp">' в степени '</span>,n,<span class="pp">' = '</span>,p);<br><span class="pv">end.</span></pre>
+				<br>
+				<strong>Ввод</strong>
+				<p>Введите a,n: </p><kbd>2 </kbd><kbd>3</kbd>
+				<br>
+				<strong>Выведет</strong>
+				<br>
+				<p>8</p>
+				<br>
 			</article><!-- .content -->
 		</div><!-- .container-->
 		<aside class="right-sidebar">
