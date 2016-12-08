@@ -186,6 +186,8 @@ input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0
 	vertical-align: top;
 }
 
+.schedule div p:hover{ cursor:move; }
+
 #list1, #list2, #list3 {
 	width: 130px;
     height: 300px;
@@ -268,19 +270,20 @@ kbd{
 
 .right-sidebar a:hover{ color: #f44336; }
 
+
+#switch-color{ margin: 20px 0; }
+
 #switch-color div{
-	padding: 10px;
-	background-color: #000;
-	border: 1px solid grey;
+	padding: 6px 12px;
+    margin: 0 5px 0 0;
+    background-color: #000;
+    border: 1px solid grey;
+    display: inline;
 }
 
-#switch-color div:first-of-type{
-	background-color: #efebeb;
-}
+#switch-color div:first-of-type{ background-color: #efebeb; }
 
-#switch-color div:last-of-type{
-	background-color: #d64439;
-}
+#switch-color div:last-of-type{ background-color: #d64439; }
 
 /* Bottom*/
 .bottom {
