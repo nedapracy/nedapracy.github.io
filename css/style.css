@@ -87,7 +87,7 @@ nav a:last-of-type{
 
 nav a:last-of-type:after{
 	content: ' ';
-    padding: 5px 10px;
+    padding: 2px 9px;
     margin-left: 10px;
     background-image: url(../img/pdf.png);
     background-size: contain;
@@ -267,6 +267,20 @@ kbd{
 }
 
 .right-sidebar a:hover{ color: #f44336; }
+
+#switch-color div{
+	padding: 10px;
+	background-color: #000;
+	border: 1px solid grey;
+}
+
+#switch-color div:first-of-type{
+	background-color: #efebeb;
+}
+
+#switch-color div:last-of-type{
+	background-color: #d64439;
+}
 
 /* Bottom*/
 .bottom {
