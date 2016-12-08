@@ -46,16 +46,14 @@
 			<article class="content">
 				<p>Пример программы, выводящей строку «Hello, world!»:</p>
 				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">begin</span> <br>  <span class="pf">writeln</span>(<span class="pp">'Hello, World!'</span>); <span class="pc">{ оператор вывода строки }</span><br><span class="pv">end.</span></pre>
-				<p>В стандартном и расширенном Паскале есть такие простые типы: числа с плавающей запятой <strong>(real)</strong>, целые <strong>(integer)</strong>, символьный <strong>(char)</strong>, логический <strong>(boolean)</strong> и перечисления (конструктор нового типа, введённый в Pascal).</p>
 				<br>
-				<p><i>Turbo Pascal</i> дополнил язык вариациями этих типов: например, <strong>shortint</strong> будет короче <strong>integer</strong>, а <strong>longint</strong> — длиннее.</p>
+				<p>В стандартном и расширенном Паскале есть такие <b>простые</b> типы: числа с плавающей запятой (<code>real</code>), целые (<code>integer</code>), символьный (<code>char</code>), логический (<code>boolean</code>) и перечисления (конструктор нового типа, введённый в Pascal).</p>
 				<br>
-				<p>Современные диалекты <i>Pascal</i>, такие, как <i>FPC</i> или <i>Delphi</i>, считают, что <strong>integer</strong> — это наиболее подходящий для данной машины целый, применяемый, например, для индексов массива, а <strong>shortint</strong>, <strong>longint</strong> и другие — целые определённой длины; это удобно при кроссплатформенном программировании. Аналогично и с дробными числами.</p>
-				<br>
+				<p>Современные диалекты Pascal, такие, как FPC или Delphi, считают, что <code>integer</code>&nbsp;— это наиболее подходящий для данной машины целый, применяемый, например, для индексов массива, а <code>shortint</code>, <code>longint</code> и другие&nbsp;— целые определённой длины; это удобно при кроссплатформенном программировании. Аналогично и с дробными числами.</p>
 				<p>Целочисленные типы:</p>
 				<br>
 				<p>Вычисление A в степени n:</p>
-				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;">var<br>   n,i: integer;<br>   a,p: real;<br>begin<br>  write('Введите a,n: ');<br>  readln(a,n);<br>  p := 1;<br>  for i := 1 to n do<br>  p := p * a;<br>  writeln(a,' в степени ',n,' = ',p);<br>end.</pre>
+				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">var</span><br>   n,i: <span class="pt">integer</span>;<br>   a,p: <span class="pt">real</span>;<br><span class="pv">begin</span><br> <span class="pf">write</span>(<span class="pp">'Введите a,n: '</span>);<br>  <span class="pf">readln(a,n);</span><br>  p := 1;<br>  for i := 1 to n do<br>  p := p * a;<br>  <span class="pf">writeln</span>(a,<span class="pp">' в степени '</span>,n,<span class="pp">' = '</span>,p);<br><span class="pv">end.</span></pre>
 			</article><!-- .content -->
 		</div><!-- .container-->
 		<aside class="right-sidebar">

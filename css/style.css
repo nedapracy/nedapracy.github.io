@@ -183,6 +183,8 @@ input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0
 
 .pp{ color: #BA2121; }
 
+.pt{ color: #B00040; }
+
 .pc{ color: #408080; font-style: italic; }
 
 #callback input[type="submit"]{
