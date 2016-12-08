@@ -87,7 +87,10 @@ nav a:last-of-type{
 
 nav a:last-of-type:after{
 	content: ' ';
-	background-image: url(img/pdf.png);
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-image: url(../img/pdf.png);
+    background-size: contain;
 } 
 
 nav a:hover{
@@ -206,7 +209,7 @@ td{
 
 kbd{
     padding: 2px 4px;
-    color: #fff;
+    color: #000;
     background-color: rgb(228, 228, 228);
 }
 
