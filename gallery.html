@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Галерея</title>
+	<base href="https://nedapracy.github.io/">
+	<meta name="author" content="Екатерина Курьян">
+	<meta name="description" content="Данный сайт являеться частью учебной программы ММФ. Узнать больше о факультете можно здесь: mmf.bsu.by/ru">		
+	<meta name="keywords" content="праздники минск, выставки в минске, афиша мероприятий">
+	<!--<meta http-equiv="expires" content="Tue, 20 Dec 2016 10:00:00 GMT">-->
+	<link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="up"><a href=""><img alt="На вверх" src="img/up.png" /></a></div>
+<div class="wrapper">
+	<header>
+		<div id="contact-wrapper">
+			<span>+375 29 123-45-67</span>
+			<a href="mailto:nedapracy@gmail.com?subject=Вопрос по сайту&body=Здравсвуй, у меня возник вопрос&cc=test1@gmail.com&bcc=test2@gmail.com&title=Вопрос по сайту">nedapracy@gmail.com</a>
+		</div>
+		<div id="menu-wrapper">                   
+		<nav>
+			<a href="index.html" accesskey="1" ><img id="logo" src="img/logoNew.png"></a>
+			<a href="index.html" accesskey="1" >Афиша новостей</a>
+			<a href="event.html" target="_blank" accesskey="2">События</a>
+			<a href="gallery.html" accesskey="3">Галерея</a>
+			<a href="pascal.html" hreflang="ru" accesskey="4" rel="nofollow">PASCAL</a>
+			<a href="contact.html" accesskey="5">Контакты</a>
+			<a href="/list.pdf" accesskey="6" download>Скачать расписание</a>
+		</nav>
+		</div>
+	</header><!-- .header-->
+	<div class="breadcrumb">
+		<strong>ГАЛЕРЕЯ</strong>
+	</div>
+	<div class="top">
+		<div class="container">
+			<article class="content">
+			<h1>HTML: Теги &lt;video&gt; и &lt;audio&gt;</h1>
+			</article><!-- .content -->
+		</div>
+	</div><!-- .top-->
+	<div class="middle">
+		<div class="container">
+			<article class="content">
+				<p>Хотя веб-браузеры имеют встроенную поддержку изображений с самых первых дней, встраивание аудио или видео на веб-страницу всегда требовало дополнительных подключаемых модулей (отдельных программных компонентов), которые добавляют больше возможностей браузеру, но не являются его частью (например Flash, QuickTime, RealPlayer и другие).</p>
+				<br>
+				<p>Стандарт HTML5 вводит новые элементы &lt;audio&gt; и &lt;video&gt;, которые позволяют веб-разработчикам встраивать звук и видео на веб-страницу, не требуя собственных плагинов. Конечно из этого следует, что сам браузер должен иметь возможность воспроизведения таких файлов, на данный момент только последние версии браузеров поддерживают эти элементы.</p>
+				<p>Элемент предназначен для размещения видео контента на странице. Для корректного отображения контента стоит прописать дополнительно атрибуты width, height, src, controls. Ваш код будет выглядеть примерно так:</p>
+				<br>
+				<p>Элемент &lt;audio&gt; внедряет звуковой файл на веб-страницу. Это заменяемый элемент, но он не относится к пустым элементам, поэтому он может содержать и собственный контент и другие элементы. В своей простейшей форме элемент &lt;audio&gt; должен иметь только атрибут src, указывающий путь к звуковому файлу:</p>
+				<br>
+				<pre class="brush: css;">&lt;audio src="audio/file.mp3"&gt;&lt;/audio&gt;</pre>
+				<br>
+				<p>Однако он редко используется в такой простой форме. По умолчанию элемент &lt;audio&gt; не имеет элементов управления и поэтому полностью невидимый. Он будет располагаться в HTML-документе и может быть доступен в браузере или JavaScript, но простое внедрение аудио файла не принесет особой пользы. С помощью логического атрибута controls можно добавить к аудио-файлу его собственные элементы управления, которые будут отображаться на веб-странице в месте расположения элемента &lt;audio&gt;:</p>
+				<br>
+				<pre class="brush: css;">&lt;audio src="audio/file.mp3" controls&gt;&lt;/audio&gt;</pre>
+				<br>
+				<p>Эти элементы управления предоставляются браузером и могут визуально отличаться в зависимости от браузера, но предоставляемые функции остаются неизменными:</p>
+				<br>
+				<ul>
+					<li>кнопка play/pause</li>
+					<li>полоса прокрутки</li>
+					<li>отображение времени</li>
+					<li>громкость</li>
+				</ul>
+
+			</article><!-- .content -->
+		</div><!-- .container-->
+		<aside class="right-sidebar">
+			<strong>Картинки дня</strong>
+			<ul>
+				<li><img alt="Японская осень в Беларуси" src="http://citydog.by/content/_afisha/334X334/57f7699e35030.jpg" style="width: 200px;"/></li>
+				<li><img alt="Сад" src="http://citydog.by/content/_afisha/334X334/577f998c92949.jpg" style="width: 200px;"/></li>
+				<li><img alt="Белорусские недели" src="img/6.jpg" style="width: 200px;"/></li>
+			</ul>
+			<strong>Контактные данные</strong>
+			<p style="margin-top: 20px;">+375 29 123-45-67</p>
+			<p>+375 29 123-45-67</p>
+			<a href="mailto:nedapracy@gmail.com?subject=Вопрос по сайту&body=Здравсвуй, у меня возник вопрос&cc=test1@gmail.com&bcc=test2@gmail.com&title=Вопрос по сайту">nedapracy@gmail.com</a>
+		</aside><!-- .right-sidebar -->
+	</div><!-- .middle-->
+	<div class="bottom">
+		<div class="container">
+			<article class="content">
+				<blockquote><p>"Если человек не умеет хорошо отдыхать, он вряд ли сможет хорошо работать." </p></blockquote>
+			</article><!-- .content -->
+		</div>
+	</div><!-- .bottom-->
+	<footer>
+		Copyright © 2016
+	</footer><!-- .footer -->
+</div><!-- .wrapper -->
+<script>
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+	function drag(ev) {
+		ev.dataTransfer.setData("Text", ev.target.id);
+	}
+	function drop(ev) {
+		var data = ev.dataTransfer.getData("Text");
+		ev.target.appendChild(document.getElementById(data));
+		ev.preventDefault();
+	}
+</script>
+</body>
+</html>

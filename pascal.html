@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Pascal</title>
-	<!--<base href="https://nedapracy.github.io/">-->
+	<base href="https://nedapracy.github.io/">
 	<meta name="author" content="Екатерина Курьян">
 	<meta name="description" content="Данный сайт являеться частью учебной программы ММФ. Узнать больше о факультете можно здесь: mmf.bsu.by/ru">		
 	<meta name="keywords" content="праздники минск, выставки в минске, афиша мероприятий">
+	<meta http-equiv="cache-control" content="no-cache">
 	<link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
@@ -22,11 +23,11 @@
 		<nav>
 			<a href="index.html" accesskey="1" ><img id="logo" src="img/logoNew.png"></a>
 			<a href="index.html" accesskey="1" >Афиша новостей</a>
-			<a href="events" target="_blank" accesskey="2">События</a>
+			<a href="events.html" target="_blank" accesskey="2">События</a>
 			<a href="gallery.html" accesskey="3">Галерея</a>
-			<a href="pascal.html" accesskey="4">PASCAL</a>
+			<a href="pascal.html" hreflang="ru" accesskey="4" rel="nofollow">PASCAL</a>
 			<a href="contact.html" accesskey="5">Контакты</a>
-			<a href="/list.pdf" hreflang="ru" accesskey="6" download>Скачать расписание</a>
+			<a href="/list.pdf" accesskey="6" download>Скачать расписание</a>
 		</nav>
 		</div>
 	</header><!-- .header-->
@@ -36,9 +37,7 @@
 	<div class="top">
 		<div class="container">
 			<article class="content">
-				<p>Программы на Паскале начинаются с ключевого слова <strong>Program</strong> и следующего за ним имени программы с точкой с запятой (в некоторых диалектах является необязательным), за именем может в скобках следовать список внешних файловых дескрипторов («окружение») в качестве параметров; за ним следует тело программы, состоящее из секций описания констант <strong>(Const)</strong>, типов <strong>(Type)</strong>, переменных <strong>(Var)</strong>, объявлений процедур <strong>(Procedure)</strong> и функций <strong>(Function)</strong> и следующего за ними блока операторов, являющегося точкой входа в программу. В языке Паскаль блок ограничивается ключевыми словами <strong>begin</strong> и <strong>end</strong>. Операторы разделяются точками с запятой, после тела помещается точка, служащая признаком конца программы.</p>
-				<br>
-				<p>Регистр символов в Паскале не имеет значения.</p>
+				<p>Программы на Паскале начинаются с ключевого слова <code>Program</code> и следующего за ним имени программы с <b>точкой с запятой</b> (в некоторых диалектах является необязательным), за именем может в скобках следовать список внешних файловых дескрипторов («окружение») в качестве параметров; за ним следует тело программы, состоящее из <i>секций описания</i> <b>констант</b> (<code>Const</code>), <b>типов</b> (<code>Type</code>), <b>переменных</b> (<code>Var</code>), <i>объявлений</i> <b>процедур</b> (<code>Procedure</code>) и <b>функций</b> (<code>Function</code>) и следующего за ними блока операторов, являющегося <b>точкой входа</b> в программу. В языке Паскаль <b>блок</b> ограничивается ключевыми словами <code>begin</code> и <code>end</code>. Операторы разделяются точками с запятой, после тела помещается точка, служащая признаком конца программы.</p>
 			</article><!-- .content -->
 		</div>
 	</div><!-- .top-->
@@ -46,113 +45,17 @@
 		<div class="container">
 			<article class="content">
 				<p>Пример программы, выводящей строку «Hello, world!»:</p>
-				<p style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 0;"><code>
-					begin<br>
-						writeln('Hello, World!');  { оператор вывода строки }<br>
-					end.
-				</code></p>
-				<p>В стандартном и расширенном Паскале есть такие простые типы: числа с плавающей запятой (real), целые (integer), символьный (char), логический (boolean) и перечисления (конструктор нового типа, введённый в Pascal).</p>
+				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">begin</span> <br>  <span class="pf">writeln</span>(<span class="pp">'Hello, World!'</span>); <span class="pc">{ оператор вывода строки }</span><br><span class="pv">end.</span></pre>
+				<p>В стандартном и расширенном Паскале есть такие простые типы: числа с плавающей запятой <strong>(real)</strong>, целые <strong>(integer)</strong>, символьный <strong>(char)</strong>, логический <strong>(boolean)</strong> и перечисления (конструктор нового типа, введённый в Pascal).</p>
 				<br>
-				<p>Turbo Pascal дополнил язык вариациями этих типов: например, shortint будет короче integer, а longint — длиннее.</p>
+				<p><i>Turbo Pascal</i> дополнил язык вариациями этих типов: например, <strong>shortint</strong> будет короче <strong>integer</strong>, а <strong>longint</strong> — длиннее.</p>
 				<br>
-				<p>Современные диалекты Pascal, такие, как FPC или Delphi, считают, что integer — это наиболее подходящий для данной машины целый, применяемый, например, для индексов массива, а shortint, longint и другие — целые определённой длины; это удобно при кроссплатформенном программировании. Аналогично и с дробными числами.</p>
-				<br>
-				<p>Ещё раз расширили типы при переходе на x64 — «просто целое» (integer) осталось 32-битным, но потребовался особый тип, который равен longint на x86 и int64 на x64.</p>
+				<p>Современные диалекты <i>Pascal</i>, такие, как <i>FPC</i> или <i>Delphi</i>, считают, что <strong>integer</strong> — это наиболее подходящий для данной машины целый, применяемый, например, для индексов массива, а <strong>shortint</strong>, <strong>longint</strong> и другие — целые определённой длины; это удобно при кроссплатформенном программировании. Аналогично и с дробными числами.</p>
 				<br>
 				<p>Целочисленные типы:</p>
-				<table>
-<tbody><tr>
-<th>Тип</th>
-<th>Диапазон</th>
-<th>Формат</th>
-<th>Размер в байтах</th>
-<th>Примечания</th>
-</tr>
-<tr>
-<td>Byte</td>
-<td>0..255</td>
-<td>Беззнаковый</td>
-<td>1</td>
-<td></td>
-</tr>
-<tr>
-<td>ShortInt</td>
-<td>−128..127</td>
-<td>Знаковый</td>
-<td>1</td>
-<td></td>
-</tr>
-<tr>
-<td>SmallInt</td>
-<td>−32768..32767</td>
-<td>Знаковый</td>
-<td>2</td>
-<td>Может не существовать; вместо него Integer с тем же диапазоном</td>
-</tr>
-<tr>
-<td>Word</td>
-<td>0..65535</td>
-<td>Беззнаковый</td>
-<td>2</td>
-<td></td>
-</tr>
-<tr>
-<td>LongWord</td>
-<td>0..4294967295</td>
-<td>Беззнаковый</td>
-<td>4</td>
-<td></td>
-</tr>
-<tr>
-<td>LongInt</td>
-<td>−2147483648..2147483647</td>
-<td>Знаковый</td>
-<td>4</td>
-<td></td>
-</tr>
-<tr>
-<td>Int64</td>
-<td>−9223372036854775808..9223372036854775807</td>
-<td>Знаковый</td>
-<td>8</td>
-<td></td>
-</tr>
-<tr>
-<td>QWord</td>
-<td>0..18446744073709551615</td>
-<td>Беззнаковый</td>
-<td>8</td>
-<td></td>
-</tr>
-<tr>
-<td>Integer</td>
-<td>-32768..32767.</td>
-<td>Знаковый</td>
-<td>2</td>
-<td>Наиболее быстрый целый; SmallInt или LongInt</td>
-</tr>
-<tr>
-<td>Cardinal</td>
-<td>&nbsp;?</td>
-<td>Беззнаковый</td>
-<td>&nbsp;?</td>
-<td>Наиболее быстрый целый; обычно LongWord</td>
-</tr>
-<tr>
-<td>NativeInt</td>
-<td>&nbsp;?</td>
-<td>Знаковый</td>
-<td>&nbsp;?</td>
-<td>Соответствует машинному регистру; LongInt или Int64</td>
-</tr>
-<tr>
-<td>NativeUInt</td>
-<td>&nbsp;?</td>
-<td>Беззнаковый</td>
-<td>&nbsp;?</td>
-<td>Соответствует машинному регистру; LongWord или QWord</td>
-</tr>
-</tbody></table>
+				<br>
+				<p>Вычисление A в степени n:</p>
+				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;">var<br>   n,i: integer;<br>   a,p: real;<br>begin<br>  write('Введите a,n: ');<br>  readln(a,n);<br>  p := 1;<br>  for i := 1 to n do<br>  p := p * a;<br>  writeln(a,' в степени ',n,' = ',p);<br>end.</pre>
 			</article><!-- .content -->
 		</div><!-- .container-->
 		<aside class="right-sidebar">
@@ -165,7 +68,7 @@
 	<div class="bottom">
 		<div class="container">
 			<article class="content">
-				<blockquote><p>"Если человек не умеет хорошо отдыхать, он вряд ли сможет хорошо работать." </p></blockquote>
+				<blockquote><p>"Самая короткая ночь вовсе не в третей декаде июня, а 31 декабря." </p></blockquote>
 			</article><!-- .content -->
 		</div>
 	</div><!-- .bottom-->

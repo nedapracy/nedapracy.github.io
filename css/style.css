@@ -9,6 +9,15 @@ body {
 	font: 12px/18px Arial, sans-serif;
 	background-color: #efebeb;
 }
+
+code{
+    color: #000;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 1px 4px;
+}
+
 .wrapper { width: 100%; min-width: 950px; }
 
 #up{  
@@ -155,6 +164,27 @@ input:focus::-moz-placeholder  {text-indent: 500px; transition: text-indent 0.3s
 input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
 input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
 
+.schedule {
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#list1, #list2, #list3 {
+	width: 30%;
+	height: 300px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+}
+
+.pv{ color: #008000; font-weight: bold; }
+
+.pf{ color: #008000; }
+
+.pp{ color: #BA2121; }
+
+.pc{ color: #408080; font-style: italic; }
+
 #callback input[type="submit"]{
 	background: #f44336;
 	color: #fff;
@@ -185,7 +215,7 @@ input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0
 }
 
 .right-sidebar ul{
-	margin: 20px ;
+	margin: 20px;
 }
 
 .right-sidebar ul li{
