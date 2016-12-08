@@ -37,7 +37,7 @@
 	<div class="top">
 		<div class="container">
 			<article class="content">
-				<p>Программы на Паскале начинаются с ключевого слова <code>Program</code> и следующего за ним имени программы с <b>точкой с запятой</b> (в некоторых диалектах является необязательным), за именем может в скобках следовать список внешних файловых дескрипторов («окружение») в качестве параметров; за ним следует тело программы, состоящее из <i>секций описания</i> <b>констант</b> (<code>Const</code>), <b>типов</b> (<code>Type</code>), <b>переменных</b> (<code>Var</code>), <i>объявлений</i> <b>процедур</b> (<code>Procedure</code>) и <b>функций</b> (<code>Function</code>) и следующего за ними блока операторов, являющегося <b>точкой входа</b> в программу. В языке Паскаль <b>блок</b> ограничивается ключевыми словами <code>begin</code> и <code>end</code>. Операторы разделяются точками с запятой, после тела помещается точка, служащая признаком конца программы.</p>
+				<p><span class="bukvica">П</span>рограммы на Паскале начинаются с ключевого слова <code>Program</code> и следующего за ним имени программы с <b>точкой с запятой</b> (в некоторых диалектах является необязательным), за именем может в скобках следовать список внешних файловых дескрипторов («окружение») в качестве параметров; за ним следует тело программы, состоящее из <i>секций описания</i> <b>констант</b> (<code>Const</code>), <b>типов</b> (<code>Type</code>), <b>переменных</b> (<code>Var</code>), <i>объявлений</i> <b>процедур</b> (<code>Procedure</code>) и <b>функций</b> (<code>Function</code>) и следующего за ними блока операторов, являющегося <b>точкой входа</b> в программу. В языке Паскаль <b>блок</b> ограничивается ключевыми словами <code>begin</code> и <code>end</code>. Операторы разделяются точками с запятой, после тела помещается точка, служащая признаком конца программы.</p>
 			</article><!-- .content -->
 		</div>
 	</div><!-- .top-->
@@ -51,7 +51,7 @@
 						<td>Диапазон значений</td>
 						<td>Операции</td>
 					</tr>
-					<tr align="CENTER"><td colspan="4">
+					<tr align="CENTER"><td colspan="4" style=" background-color: #1e1e1e; color: #fff;">
 						<b>Целые типы</b></td>
 					</tr>
 					<tr align="Center">
@@ -82,7 +82,7 @@
 						<td>+, -, /, *, Div, Mod,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
 					</tr>
 					<tr align="CENTER">
-						<td colspan="4"><b>Вещественные типы</b></td></tr>
+						<td colspan="4" style=" background-color: #1e1e1e; color: #fff;"><b>Вещественные типы</b></td></tr>
 						<tr align="CENTER"><td><pre>real</pre></td>
 						<td>6</td>
 						<td>2,9x10<sup>-39</sup> - 1,7x10<sup>38</sup></td>
@@ -106,7 +106,7 @@
 						<td>+, -, /, *,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
 					</tr>
 					<tr align="CENTER">
-						<td colspan="4"><b>Логический тип</b></td>
+						<td colspan="4" style=" background-color: #1e1e1e; color: #fff;"><b>Логический тип</b></td>
 					</tr>
 					<tr align="CENTER">
 						<td><pre>boolean</pre></td>
@@ -115,7 +115,7 @@
 						<td>Not, And, Or, Xor,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
 					</tr>
 					<tr align="CENTER">
-						<td colspan="4"><b>Символьный тип</b></td>
+						<td colspan="4" style=" background-color: #1e1e1e; color: #fff;"><b>Символьный тип</b></td>
 					</tr>
 					<tr align="CENTER">
 						<td><pre>char</pre></td>
@@ -124,6 +124,7 @@
 						<td>+,<br> &gt;=, &lt;=, =, &lt;&gt;, &lt;, &gt;</td>
 					</tr>
 				</tbody></table>
+				<br>
 				<p>Пример программы, выводящей строку «Hello, world!»:</p>
 				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">begin</span> <br>  <span class="pf">writeln</span>(<span class="pp">'Hello, World!'</span>); <span class="pc">{ оператор вывода строки }</span><br><span class="pv">end.</span></pre>
 				<br>
@@ -137,7 +138,7 @@
 				<p>Целочисленные типы:</p>
 				<br>
 				<p>Вычисление а в степени n:</p>
-				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">var</span><br>   n,i: <span class="pt">integer</span>;<br>   a,p: <span class="pt">real</span>;<br><span class="pv">begin</span><br> <span class="pf">write</span>(<span class="pp">'Введите a,n: '</span>);<br>  <span class="pf">readln(a,n);</span><br>  p := 1;<br>  for i := 1 to n do<br>  p := p * a;<br>  <span class="pf">writeln</span>(a,<span class="pp">' в степени '</span>,n,<span class="pp">' = '</span>,p);<br><span class="pv">end.</span></pre>
+				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="pv">var</span><br>   n,i: <span class="pt">integer</span>;<br>   a,p: <span class="pt">real</span>;<br><span class="pv">begin</span><br> <span class="pf">write</span>(<span class="pp">'Введите a,n: '</span>);<br>  <span class="pf">readln(a,n);</span><br>  p := 1;<br>  <span class="pf">for</span> i := 1 <span class="pf">to</span> n <span class="pf">do</span><br>  p := p * a;<br>  <span class="pf">writeln</span>(a,<span class="pp">' в степени '</span>,n,<span class="pp">' = '</span>,p);<br><span class="pv">end.</span></pre>
 				<br>
 				<strong>Ввод</strong>
 				<p>Введите a,n: </p><kbd>2 </kbd><kbd>3</kbd>
