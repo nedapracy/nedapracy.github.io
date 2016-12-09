@@ -128,6 +128,12 @@ nav a:last-of-type:hover{
 	content: '';
 }
 
+.gallery{ margin: 20px 27px 10px; }
+
+.gallery img{ margin-right: 15px; }
+
+.gallery img:hover{ transform: scale(2); }
+
 /* Middle*/
 .middle {
 	width: 950px;
