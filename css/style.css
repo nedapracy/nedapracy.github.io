@@ -316,7 +316,7 @@ quotes: "\00AB" "\00BB";
 
 .rotateright { transform: rotate(90deg); }
 
-.rotatleft { transform: rotate(-90deg); }
+.rotateleft { transform: rotate(-90deg); }
 
 .zoom{ transform: scale(2); }
 
