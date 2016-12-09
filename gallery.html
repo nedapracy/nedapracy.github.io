@@ -37,43 +37,46 @@
 	<div class="top">
 		<div class="container">
 			<article class="content">
-			<h1>HTML: Теги &lt;video&gt; и &lt;audio&gt;</h1>
+			
 			</article><!-- .content -->
 		</div>
 	</div><!-- .top-->
 	<div class="middle">
 		<div class="container">
 			<article class="content">
-				<p>Хотя веб-браузеры имеют встроенную поддержку изображений с самых первых дней, встраивание аудио или видео на веб-страницу всегда требовало дополнительных подключаемых модулей (отдельных программных компонентов), которые добавляют больше возможностей браузеру, но не являются его частью (например Flash, QuickTime, RealPlayer и другие).</p>
+				<h1 id="second">Чудо контекстное меню</h1>
+				<img id="rotate" alt="Кубик" title="Кубик" src="img/anim.gif" contextmenu="edit"/>
+				<menu type="context" id="edit">
+					<menuitem onclick="rotateRight()"><a href="#"><b>Повернуть на 90º вправо</b></a><br></menuitem>
+					<menuitem onclick="rotateLeft()"><a href="#"><b>Повернуть на 90º влево</b></a><br></menuitem>
+					<menuitem onclick="Zoom()"><a href="#"><b>Увеличить</b></a></menuitem>
+				</menu>
+				<h1 id="third">Теги &lt;video&gt; и &lt;audio&gt;</h1>
 				<br>
 				<p>Стандарт <b>HTML5</b> вводит новые элементы <code>&lt;audio&gt;</code> и <code>&lt;video&gt;</code>, которые позволяют веб-разработчикам встраивать звук и видео на веб-страницу, не требуя собственных плагинов. Конечно из этого следует, что сам браузер должен иметь возможность воспроизведения таких файлов, на данный момент только последние версии браузеров поддерживают эти элементы.</p>
-				<p>Элемент предназначен для размещения видео контента на странице. Для корректного отображения контента стоит прописать дополнительно атрибуты <i>width, height, src, controls</i>. Ваш код будет выглядеть примерно так:</p>
 				<br>
 				<p>Элемент <code>&lt;audio&gt;</code> внедряет звуковой файл на веб-страницу. Это заменяемый элемент, но он не относится к пустым элементам, поэтому он может содержать и собственный контент и другие элементы. В своей простейшей форме элемент <code>&lt;audio&gt;</code> должен иметь только атрибут <i>src</i>, указывающий путь к звуковому файлу:</p>
 				<br>
 				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;">&lt;audio src="audio/file.mp3"&gt;&lt;/audio&gt;</pre>
 				<br>
-				<p>Однако он редко используется в такой простой форме. По умолчанию элемент <code>&lt;audio&gt;</code> не имеет элементов управления и поэтому полностью невидимый. Он будет располагаться в HTML-документе и может быть доступен в браузере или <b>JavaScript</b>, но простое внедрение аудио файла не принесет особой пользы. С помощью логического атрибута <i>controls</i> можно добавить к аудио-файлу его собственные элементы управления, которые будут отображаться на веб-странице в месте расположения элемента <code>&lt;audio&gt;</code>:</p>
+				<p>Элемент <code>&lt;audio&gt;</code> может содержать один или несколько элементов <code>&lt;source&gt;</code>, каждый из которых будет ссылаться на свой аудио-файл, что будет полезно из-за отсутствия единого формата, поддерживаемого всеми браузерами. В этом случае браузер будет проигрывать первый медиа-файл, который он поддерживает, игнорируя все остальные:</p>
 				<br>
-				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;"><span class="ht">&lt;audio</span> <span class="ha">src</span>=<span class="ht">"audio/file.mp3" controls<span class="ht">&gt;&lt;/audio&gt;</pre>
+				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;">&lt;audio controls="controls"&gt;<br>   &lt;source src="song.ogg" type="audio/ogg"&gt;<br>   &lt;source src="song.mp3" type="audio/mpeg"&gt;<br>&lt;/audio&gt;</pre>
 				<br>
-				<p>Эти элементы управления предоставляются браузером и могут визуально отличаться в зависимости от браузера, но предоставляемые функции остаются неизменными:</p>
+				<p>Элемент <code>&lt;video&gt;</code> встраивает цифровое видео на веб-страницу. Как и в случае с <code>&lt;audio&gt;</code>, элемент <code>&lt;video&gt;</code> может иметь атрибут src, указывающий URL-адрес видеофайла:</p>
 				<br>
-				<ul>
-					<li>кнопка play/pause</li>
-					<li>полоса прокрутки</li>
-					<li>отображение времени</li>
-					<li>громкость</li>
-				</ul>
-
+				<p>Атрибут <code>controls</code> добавляет элементы управления, с помощью которых пользователь сможет взаимодействовать с плеером. Атрибут <code>autoplay</code> указывает браузеру, что видео должно начать воспроизведение сразу, как только страница будет загружена, если он не указан, то в плеере будет отображен первый кадр исходного видео. Но чаще всего он не несет никакой полезной информации о том, что будет представлено с помощью видео-контента. Вместо этого можно предоставить любое изображение, указав к нему путь в атрибуте <code>poster</code>:</p>
+				<br>
+				<pre style="border-left: 2px solid #f44336; padding: 5px 20px; margin: 5px 30px;">&lt;width="320" height="240" controls="controls" poster="logo.png"&gt;<br>   &lt;source src="movie.mp4" type="video/mp4"&gt;<br>   &lt;source src="movie.ogg" type="video/ogg"&gt;<br>&lt;/video&gt;</pre>
+				<br>
 			</article><!-- .content -->
 		</div><!-- .container-->
 		<aside class="right-sidebar">
-			<strong>Картинки дня</strong>
+			<strong>Навигация по странице</strong>
 			<ul>
-				<li><img alt="Японская осень в Беларуси" src="http://citydog.by/content/_afisha/334X334/57f7699e35030.jpg" style="width: 200px;"/></li>
-				<li><img alt="Сад" src="http://citydog.by/content/_afisha/334X334/577f998c92949.jpg" style="width: 200px;"/></li>
-				<li><img alt="Белорусские недели" src="img/6.jpg" style="width: 200px;"/></li>
+				<li><a href="#first" title="Кликните для перехода к галерее" tabindex="1">Галерея</a></li>
+				<li><a href="#second" title="Кликните для перехода к примеру использования контекстного меню" tabindex="2">Чудо контекстное меню</a></li>
+				<li><a href="#third" title="Кликните для перехода к статье о новых тегах" tabindex="3">Теги &lt;video&gt; и &lt;audio&gt;</a></li>
 			</ul>
 			<strong>Контактные данные</strong>
 			<p style="margin-top: 20px;">+375 29 123-45-67</p>
@@ -84,26 +87,24 @@
 	<div class="bottom">
 		<div class="container">
 			<article class="content">
-				<blockquote><p>"Если человек не умеет хорошо отдыхать, он вряд ли сможет хорошо работать." </p></blockquote>
+				<q lang="en">То be or not to be</q>.</p> 
 			</article><!-- .content -->
 		</div>
 	</div><!-- .bottom-->
 	<footer>
-		Copyright © 2016
+		Copyright &copy; 2016
 	</footer><!-- .footer -->
 </div><!-- .wrapper -->
-<script>
-	function allowDrop(ev) {
-		ev.preventDefault();
-	}
-	function drag(ev) {
-		ev.dataTransfer.setData("Text", ev.target.id);
-	}
-	function drop(ev) {
-		var data = ev.dataTransfer.getData("Text");
-		ev.target.appendChild(document.getElementById(data));
-		ev.preventDefault();
-	}
-</script>
+ <script>
+		 function rotateLeft() {
+			document.getElementById("rotate").classList.toggle("rotateleft");
+		 }
+		 function rotateRight() {
+			document.getElementById("rotate").classList.toggle("rotateright");
+		 }
+		 function bigImg() {
+			document.getElementById("rotate").classList.toggle("bigImg");
+		 }
+   </script>
 </body>
 </html>
