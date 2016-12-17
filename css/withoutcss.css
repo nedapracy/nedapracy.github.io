@@ -16,73 +16,13 @@ code{
     padding: 1px 4px;
 }
 
+a.out{ padding: 5px; font-weight: bold; font: 16px times-new-roman;  }
+
+ul li:first-of-type{ color: red; }
+
+ul li:nth-child(even):after { content:' Ого! '; font-weight: bold; }
+
 .wrapper { width: 100%; min-width: 950px; }
-
-#contact-wrapper{
-	padding: 10px;
-    width: 950px;
-    text-align: right;
-    margin: 0 auto;
-    z-index: 1000;
-}
-
-#contact-wrapper span, #contact-wrapper a{
-	padding-left: 10px;
-	color: #000;
-	text-decoration: none;
-}
-
-#menu-wrapper {
-	width: 970px;
-	margin: 0 auto;
-	z-index: 1000;
-	background-color: #f5f3f3;
-    border: 1px solid #efecec;
-}
-
-nav{
-	text-align: center;
-	padding: 20px;
-}
-
-#logo{
-	width: 34px;
-    position: absolute;
-    margin-top: -10px;
-    margin-left: -18px;
-}
-
-nav a{ 
-	padding: 20px 25px;
-    text-transform: uppercase;
-    color: #000;
-    text-decoration: none;
-}
-
-nav a:last-of-type{
-	background: #d64439;
-	color: #fff;
-	border: 2px solid #d64439;
-} 
-
-nav a:last-of-type:after{
-	content: ' ';
-    padding: 2px 9px;
-    margin-left: 10px;
-    background-image: url(../img/pdf.png);
-    background-size: contain;
-} 
-
-nav a:hover{
-	border-top: 2px solid #f44336;
-	color: #f44336;
-}
-
-nav a:last-of-type:hover{
-	background: #dc6c64;
-	color: #fff;
-	border: 2px solid #dc6c64;
-} 
 
 /* Breadcrumb*/
 .breadcrumb{
@@ -116,6 +56,12 @@ nav a:last-of-type:hover{
 	position: relative;
 	background-color: #fff;
 }
+
+.middle p:hover{
+    padding: 5px;
+	font-weight: bold;
+}
+
 .middle:after {
 	display: table;
 	clear: both;
@@ -235,12 +181,17 @@ kbd{
 	border-left: 2px solid #fff;
 }
 
+.right-sidebar ul li:before{
+	content: "\27A5 ";
+}
+
 .right-sidebar .events{
 	text-decoration: none;
 	list-style: none;
 }
 
 .right-sidebar .events.first{
+	font-weight: bold;
 }
 
 .right-sidebar a{

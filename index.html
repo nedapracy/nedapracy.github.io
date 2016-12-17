@@ -12,6 +12,73 @@
 	<link type="text/css" rel="stylesheet" href="css/withoutcss.css" />
 </head>
 <body>
+<style>
+	#contact-wrapper{
+	padding: 10px;
+    width: 950px;
+    text-align: right;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+#contact-wrapper span, #contact-wrapper a{
+	padding-left: 10px;
+	color: #000;
+	text-decoration: none;
+}
+
+#menu-wrapper {
+	width: 970px;
+	margin: 0 auto;
+	z-index: 1000;
+	background-color: #f5f3f3;
+    border: 1px solid #efecec;
+}
+
+nav{
+	text-align: center;
+	padding: 20px;
+}
+
+#logo{
+	width: 34px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -18px;
+}
+
+nav a{ 
+	padding: 20px 25px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+nav a:last-of-type{
+	background: #d64439;
+	color: #fff;
+	border: 2px solid #d64439;
+} 
+
+.pdf:after{
+	content: ' ';
+    padding: 2px 9px;
+    margin-left: 10px;
+    background-image: url(img/pdf.png);
+    background-size: contain;
+} 
+
+nav a:hover{
+	border-top: 2px solid #f44336;
+	color: #f44336;
+}
+
+nav a:last-of-type:hover{
+	background: #dc6c64;
+	color: #fff;
+	border: 2px solid #dc6c64;
+} 
+</style>
 <div class="wrapper">
 	<header>
 		<div id="contact-wrapper">
@@ -26,13 +93,10 @@
 			<a href="gallery.html" accesskey="3">Галерея</a>
 			<a href="pascal.html" hreflang="ru" accesskey="4" rel="nofollow">PASCAL</a>
 			<a href="contact.html" accesskey="5">Контакты</a>
-			<a href="/list.pdf" accesskey="6" download>Скачать расписание</a>
+			<a class="pdf" href="/list.pdf" accesskey="6" download>Скачать расписание</a>
 		</nav>
 		</div>
 	</header><!-- .header-->
-	<div class="breadcrumb">
-		<strong>АФИША НОВОСТЕЙ</strong>
-	</div>
 	<div class="top">
 		<div class="container">
 			<article class="content">
@@ -55,7 +119,7 @@
 			<br>
 			<p>У себя на родине, в Австралии, Дэвид Браун занимается экологическими проектами, читает лекции, посещает экспериментальные территории – от дач до лесов. А экологическое образование получил в Университете Тасмании. В Беларуси он бывал не раз.</p>
 			<br>
-			<p>«Одна из улиц, которая больше всего нуждается в деревьях, – проспект Независимости. Вернувшись через год в Беларусь, я заметил, что деревьев там стало меньше, и это грустно. Не знаю другого города, который нуждался бы в деревьях так же сильно. А ведь я бывал в Канаде, США, России, Западной Европе, Великобритании, на Гавайях, в Новой Зеландии и Австралии», – рассказывает эколог.</p>
+			<p>«Одна из улиц, которая больше всего нуждается в деревьях, – проспект Независимости. Вернувшись через год в Беларусь, я заметил, что деревьев там стало меньше, и это грустно. Не знаю другого города, который нуждался бы в деревьях так же сильно. А ведь я бывал в Канаде, США, <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F" class="out">России</a>, Западной Европе, Великобритании, на Гавайях, в Новой Зеландии и Австралии», – рассказывает эколог.</p>
 			<br>
 			<p>Причем, по словам Дэвида, в Минске картирование совсем не учло то, в каких условиях живут деревья: достаточно ли подпитываются, получают ли необходимое количество влаги и т. д.</p>
 			</article><!-- .content -->
