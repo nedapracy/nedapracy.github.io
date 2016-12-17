@@ -154,7 +154,7 @@ td{
 	width: 170px;
 }
 
-td:nth-of-type(n+3) {
+td:nth-of-type(3n+2) {
     background: grey;
 }
 
