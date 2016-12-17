@@ -22,6 +22,14 @@ ul li:first-of-type{ color: red; }
 
 ul li:nth-child(even):after { content:' Ого! '; font-weight: bold; }
 
+.pdf:after{
+	content: ' ';
+    padding: 2px 9px;
+    margin-left: 10px;
+    background-image: url(../img/pdf.png);
+    background-size: contain;
+} 
+
 .wrapper { width: 100%; min-width: 950px; }
 
 /* Breadcrumb*/
@@ -57,7 +65,7 @@ ul li:nth-child(even):after { content:' Ого! '; font-weight: bold; }
 	background-color: #fff;
 }
 
-.middle p:hover{
+.top p:hover, .middle p:hover{
     padding: 5px;
 	font-weight: bold;
 }
@@ -112,7 +120,7 @@ input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0
 	vertical-align: top;
 }
 
-.schedule div p:hover{ cursor:move; color: #d64439; }
+.schedule div p:hover{ cursor:move; font-family: times-new-roman; background-color: #000; }
 
 #list1, #list2, #list3 {
 	width: 130px;
@@ -162,14 +170,6 @@ kbd{
 	position: relative;
 }
 
-.right-sidebar strong{
-	text-transform: uppercase;
-	padding: 5px;
-	color: #fff;
-	background-color: #f44336;
-	border: 1px solid #f44336;
-}
-
 .right-sidebar ul{
 	margin: 20px;
 }
@@ -179,6 +179,10 @@ kbd{
 	list-style: none;
 	padding: 6px 10px 6px 12px;
 	border-left: 2px solid #fff;
+}
+
+.right-sidebar ul li:focus{
+	color: #2196F3;
 }
 
 .right-sidebar ul li:before{

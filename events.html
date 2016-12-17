@@ -9,10 +9,68 @@
 	<meta name="keywords" content="праздники минск, выставки в минске, афиша мероприятий">
 	<!--<meta http-equiv="expires" content="Tue, 20 Dec 2016 10:00:00 GMT">-->
 	<link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/withoutcss.css" />
 </head>
 <body>
-<div id="up"><a href=""><img alt="На вверх" src="img/up.png" /></a></div>
+<style>
+	#contact-wrapper{
+	padding: 10px;
+    width: 950px;
+    text-align: right;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+#contact-wrapper span, #contact-wrapper a{
+	padding-left: 10px;
+	color: #000;
+	text-decoration: none;
+}
+
+#menu-wrapper {
+	width: 970px;
+	margin: 0 auto;
+	z-index: 1000;
+	background-color: #f5f3f3;
+    border: 1px solid #efecec;
+}
+
+nav{
+	text-align: center;
+	padding: 20px;
+}
+
+#logo{
+	width: 34px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -18px;
+}
+
+nav a{ 
+	padding: 20px 25px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+nav a:last-of-type{
+	background: #d64439;
+	color: #fff;
+	border: 2px solid #d64439;
+}
+
+nav a:hover{
+	border-top: 2px solid #f44336;
+	color: #f44336;
+}
+
+nav a:last-of-type:hover{
+	background: #dc6c64;
+	color: #fff;
+	border: 2px solid #dc6c64;
+} 
+</style>
 <div class="wrapper">
 	<header>
 		<div id="contact-wrapper">
@@ -31,9 +89,6 @@
 		</nav>
 		</div>
 	</header><!-- .header-->
-	<div class="breadcrumb">
-		<strong>СОБЫТИЯ</strong>
-	</div>
 	<div class="top">
 		<div class="container">
 			<article class="content">
@@ -182,13 +237,15 @@
 			</article><!-- .content -->
 		</div><!-- .container-->
 		<aside class="right-sidebar">
-			<strong>Картинки дня</strong>
+			<h3>Картинки дня</h3>
+			<hr>
 			<ul>
 				<li><img alt="Японская осень в Беларуси" src="http://citydog.by/content/_afisha/334X334/57f7699e35030.jpg" style="width: 200px;"/></li>
 				<li><img alt="Сад" src="http://citydog.by/content/_afisha/334X334/577f998c92949.jpg" style="width: 200px;"/></li>
 				<li><img alt="Белорусские недели" src="img/6.jpg" style="width: 200px;"/></li>
 			</ul>
-			<strong>Контактные данные</strong>
+			<h3>Контактные данные</h3>
+			<hr>
 			<p style="margin-top: 20px;">+375 29 123-45-67</p>
 			<p>+375 29 123-45-67</p>
 			<a href="mailto:nedapracy@gmail.com?subject=Вопрос по сайту&body=Здравсвуй, у меня возник вопрос&cc=test1@gmail.com&bcc=test2@gmail.com&title=Вопрос по сайту">nedapracy@gmail.com</a>

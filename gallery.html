@@ -9,10 +9,68 @@
 	<meta name="keywords" content="праздники минск, выставки в минске, афиша мероприятий">
 	<!--<meta http-equiv="expires" content="Tue, 20 Dec 2016 10:00:00 GMT">-->
 	<link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/withoutcss.css" />
 </head>
 <body>
-<div id="up"><a href=""><img alt="На вверх" src="img/up.png" /></a></div>
+<style>
+	#contact-wrapper{
+	padding: 10px;
+    width: 950px;
+    text-align: right;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+#contact-wrapper span, #contact-wrapper a{
+	padding-left: 10px;
+	color: #000;
+	text-decoration: none;
+}
+
+#menu-wrapper {
+	width: 970px;
+	margin: 0 auto;
+	z-index: 1000;
+	background-color: #f5f3f3;
+    border: 1px solid #efecec;
+}
+
+nav{
+	text-align: center;
+	padding: 20px;
+}
+
+#logo{
+	width: 34px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -18px;
+}
+
+nav a{ 
+	padding: 20px 25px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+nav a:last-of-type{
+	background: #d64439;
+	color: #fff;
+	border: 2px solid #d64439;
+} 
+
+nav a:hover{
+	border-top: 2px solid #f44336;
+	color: #f44336;
+}
+
+nav a:last-of-type:hover{
+	background: #dc6c64;
+	color: #fff;
+	border: 2px solid #dc6c64;
+} 
+</style>
 <div class="wrapper">
 	<header>
 		<div id="contact-wrapper">
@@ -31,9 +89,6 @@
 		</nav>
 		</div>
 	</header><!-- .header-->
-	<div class="breadcrumb">
-		<strong>ГАЛЕРЕЯ</strong>
-	</div>
 	<div class="top">
 		<div class="container">
 			<article class="content">
@@ -92,20 +147,23 @@
 			</article><!-- .content -->
 		</div><!-- .container-->
 		<aside class="right-sidebar">
-			<strong>Навигация по ссылкам</strong>
+			<h3>Навигация по ссылкам</h3>
+			<hr>
 			<ul>
 				<li><a href="#fe" title="Кликните для перехода к галерее" tabindex="1">Галерея</a></li>
 				<li><a href="#se" title="Кликните для перехода к статье о новых тегах" tabindex="3">Теги &lt;video&gt; и &lt;audio&gt;</a></li>
 				<li><a href="#te" title="Кликните для перехода к примеру использования контекстного меню" tabindex="2">Чудо контекстное меню</a></li>
 			</ul>
-			<strong>Навигация по фото</strong>
+			<h3>Навигация по фото</h3>
+			<hr>
 			<img src="img/tree.jpg" usemap="#primer-5" alt="Навигация по фото" title="Навигационная карта" style="width: 200px; margin: 20px 0;">
 			<map name="primer-5">
 				<area href="index.html" shape="rect" coords="17,38,187,96" title="На афишу" alt="На афишу">
 				<area href="events.html" shape="circle" coords="101,120,54" title="События" alt="События">
 				<area href="pascal.html" shape="poly" coords="200,50,130,60" title="PASCAL" alt="PASCAL">
 			</map>
-			<strong>Контактные данные</strong>
+			<h3>Контактные данные</h3>
+			<hr>
 			<p style="margin-top: 20px;">+375 29 123-45-67</p>
 			<p>+375 29 123-45-67</p>
 			<a href="mailto:nedapracy@gmail.com?subject=Вопрос по сайту&body=Здравсвуй, у меня возник вопрос&cc=test1@gmail.com&bcc=test2@gmail.com&title=Вопрос по сайту">nedapracy@gmail.com</a>
