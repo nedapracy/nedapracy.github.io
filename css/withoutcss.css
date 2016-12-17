@@ -95,6 +95,11 @@ ul li:nth-child(even):after { content:' Ого! '; font-weight: bold; }
 	padding: 0 270px 0 0;
 }
 
+#last-news{
+	font-size: 12px;
+    color: #000;
+}
+
 #last-news:last-child{
 	font-size: 11px;
     color: #F44336;
