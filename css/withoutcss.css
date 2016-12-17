@@ -2,12 +2,22 @@
 	margin: 0;
 	padding: 0;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
 }
+
 body {
 	font: 12px/18px Arial, sans-serif;
 }
+
+hr{     
+	margin: 15px 0;
+    background: #e2e2e2;
+    height: 1px;
+    border: none;
+}
+
 code{
     color: #000;
     background-color: #f9f9f9;
@@ -80,16 +90,17 @@ ul li:nth-child(even):after { content:' Ого! '; font-weight: bold; }
 	float: left;
 	overflow: hidden;
 }
+
 .middle .content {
 	padding: 0 270px 0 0;
 }
 
-hr{     
-	margin: 15px 0;
-    background: #e2e2e2;
-    height: 1px;
-    border: none;
+.middle .content img:nth-of-type(){ 
+	float: left; margin-right: 7px; 
 }
+
+.middle .content img:nth-of-type(2n+1) { float: left; margin-right: 7px;  }
+.middle .content img:nth-of-type(2n) { float: right; margin-left: 7px;  }
 
 input[placeholder]{ color: #a7a5a5; }
 input::-webkit-input-placeholder{ color: #a7a5a5; } 
@@ -141,6 +152,10 @@ input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0
 
 td{
 	width: 170px;
+}
+
+td:nth-of-type(2n+3) {
+    background: grey;
 }
 
 kbd{
