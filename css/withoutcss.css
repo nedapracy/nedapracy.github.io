@@ -120,7 +120,7 @@ input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0
 	vertical-align: top;
 }
 
-.schedule div p:hover{ cursor:move; font-family: times-new-roman; background-color: #000; }
+.schedule div p:hover{ font-family: times-new-roman; background-color: #d64439; }
 
 #list1, #list2, #list3 {
 	width: 130px;
