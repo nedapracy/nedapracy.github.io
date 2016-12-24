@@ -119,11 +119,12 @@ input:focus:-moz-placeholder           {text-indent: 500px; transition: text-ind
 input:focus:-ms-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
 
 #bukvica{
-    font-size: 30px;
+    font-size: 80px;
     font-family: Georgia, sans-serif;
-	color: #d64439;
-    margin-right: 5px;
-    line-height: 0.25em;
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+    line-height: 0.35em;
 }
 
 .schedule {
